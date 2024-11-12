@@ -41,3 +41,10 @@
         </tbody>
     </table>
 </div>
+<br>
+<form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button type="submit" style="font-size: 20px">
+        {{ __('Logout') }}
+    </button>
+</form>
